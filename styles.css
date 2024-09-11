@@ -1,0 +1,55 @@
+body{
+    background-color: bisque;
+    
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: 'Playwrite CU', cursive;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+table{
+    margin: 0 auto;
+    border: solid 1px black;
+    background-color: rgb(218, 186, 107);
+    width: 40%;
+    text-align: center;
+}
+/*Exluding Album because of the desired placement*/
+td:not(.Album){
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* button styling*/
+button{
+    background-color: rgb(218, 186, 107);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+    color: rgb(68, 70, 224);
+}
+/*Fixing the padding and font for the name of the band*/
+.Name{
+    font-family:'Playwrite CU', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    background-color: rgb(218, 186, 107);
+}
+/*Fixing the padding*/
+.Genre, .Date{
+    padding-top: 10px;
+}
